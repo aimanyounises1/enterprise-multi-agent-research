@@ -2,6 +2,10 @@
 
 This document captures the illustrative scenarios from the `Graph Unified Technical Deep Dive` presentation and remaps them to the open-source implementation in this repository. All identifiers, issue keys, changelist numbers, and email addresses are synthetic placeholders intended purely for demonstration purposes.
 
+![Enterprise MCP Service Integration](assets/mcp_service_overview.svg)
+
+> **Figure 1.** Sanitized overview of the Copilot-to-Enterprise MCP service chain described in the presentation.
+
 ## Natural Language Query Understanding
 
 - **Identifier Extraction:**
@@ -56,6 +60,12 @@ Processing is orchestrated by the enterprise MCP server and consumed through `sr
 | `generate_final_summary` | Final report | Applies 5-section template, scores quality |
 
 > **Note:** The table keeps the conceptual node names used in the slide deck. In the repository, these responsibilities are composed across the `supervisor`, `research_agent`, and related LangGraph nodes wired up in `src/enterprise_multi_agent/enterprise_multi_agent.py`.
+
+![Research Response Flow](assets/research_response_flow.svg)
+
+> **Figure 2.** Sanitized depiction of the multi-agent research loop that powers the sample report shown in this document.
+
+For a full text walk-through, see [`docs/research_sample_output.md`](research_sample_output.md).
 
 ## API Integration Cheat Sheet
 

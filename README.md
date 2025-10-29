@@ -152,6 +152,14 @@ The demo script in `examples/run_examples.py` now includes a `360° Secondary Se
 
 > All identifiers in this scenario are anonymized placeholders to ensure corporate data remains secure.
 
+### Enterprise MCP Visuals
+<p align="center">
+  <img src="docs/assets/mcp_service_overview.svg" alt="Enterprise MCP service integration overview" width="70%">
+</p>
+<p align="center">
+  <img src="docs/assets/research_response_flow.svg" alt="Multi-agent research response flow" width="70%">
+</p>
+
 ## 🏗️ Architecture
 
 ```
@@ -238,6 +246,7 @@ pytest tests/test_researcher.py -v
 - [API Reference](docs/api_reference.md)
 - [Configuration Guide](docs/configuration.md)
 - [Technical Deep Dive Examples](docs/technical_deep_dive_examples.md) ← sanitized scenarios distilled from the presentation
+- [Sample Research Session Output](docs/research_sample_output.md)
 
 ## 🤝 Contributing
 
