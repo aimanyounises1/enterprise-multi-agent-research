@@ -147,6 +147,11 @@ config = {
 result = await graph.ainvoke(initial_state, config=config)
 ```
 
+### Slide-Based Secondary Search Scenario
+The demo script in `examples/run_examples.py` now includes a `360° Secondary Search Expansion` option inspired by the deep-dive presentation. It issues a sanitized query around `customer/v1/updateAccount`, showcases how secondary identifiers (for example, documentation tasks such as `DOC-1064`) are discovered, and demonstrates how the supervisor and researcher agents collaborate to correlate Perforce changelists, JIRA issues, and Confluence pages.
+
+> All identifiers in this scenario are anonymized placeholders to ensure corporate data remains secure.
+
 ## 🏗️ Architecture
 
 ```
@@ -232,6 +237,7 @@ pytest tests/test_researcher.py -v
 - [Enhancement Roadmap](docs/enhancement_roadmap.md)
 - [API Reference](docs/api_reference.md)
 - [Configuration Guide](docs/configuration.md)
+- [Technical Deep Dive Examples](docs/technical_deep_dive_examples.md) ← sanitized scenarios distilled from the presentation
 
 ## 🤝 Contributing
 

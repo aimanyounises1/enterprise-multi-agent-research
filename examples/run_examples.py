@@ -54,10 +54,36 @@ async def example_complex_research():
     return result
 
 
+async def example_secondary_expansion():
+    """Slide-driven 360° secondary search example"""
+    print("=" * 80)
+    print("EXAMPLE 3: 360° Secondary Search Expansion")
+    print("=" * 80)
+    
+    query = """
+    Investigate customer/v1/updateAccount:
+    - Identify related changelists and documentation tasks
+    - Cross-reference any linked knowledge base items
+    - Summarize relationships across code, tickets, and docs
+    """
+    
+    result = await research_with_enterprise_tools(
+        query=query,
+        stream_output=True
+    )
+    
+    print("\n" + "=" * 80)
+    print("SECONDARY SEARCH SUMMARY:")
+    print("=" * 80)
+    print(result["final_report"])
+    
+    return result
+
+
 async def example_custom_configuration():
     """Example with custom configuration"""
     print("=" * 80)
-    print("EXAMPLE 3: Custom Configuration")
+    print("EXAMPLE 4: Custom Configuration")
     print("=" * 80)
     
     # Custom MCP configuration
@@ -101,10 +127,11 @@ async def main():
     print("Choose an example to run:")
     print("1. Simple Research Query")
     print("2. Complex Multi-Source Research")
-    print("3. Custom Configuration")
-    print("4. Run All Examples")
+    print("3. 360° Secondary Search Expansion")
+    print("4. Custom Configuration")
+    print("5. Run All Examples")
     
-    choice = input("\nEnter your choice (1-4): ")
+    choice = input("\nEnter your choice (1-5): ")
     
     try:
         if choice == "1":
@@ -112,11 +139,15 @@ async def main():
         elif choice == "2":
             await example_complex_research()
         elif choice == "3":
-            await example_custom_configuration()
+            await example_secondary_expansion()
         elif choice == "4":
+            await example_custom_configuration()
+        elif choice == "5":
             await example_simple_research()
             print("\n" + "=" * 80 + "\n")
             await example_complex_research()
+            print("\n" + "=" * 80 + "\n")
+            await example_secondary_expansion()
             print("\n" + "=" * 80 + "\n")
             await example_custom_configuration()
         else:
