@@ -39,7 +39,7 @@ A production-grade multi-agent AI system for autonomous enterprise research and 
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/enterprise-multi-agent-research.git
+git clone https://github.com/aimanyounises1/enterprise-multi-agent-research.git
 cd enterprise-multi-agent-research
 ```
 
@@ -257,7 +257,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 Aiman Younis - [LinkedIn](https://www.linkedin.com/in/aimanyounis/) - aimanyounises@gmail.com
 
-Project Link: [https://github.com/yourusername/enterprise-multi-agent-research](https://github.com/yourusername/enterprise-multi-agent-research)
+Project Link: [https://github.com/aimanyounises1/enterprise-multi-agent-research](https://github.com/aimanyounises1/enterprise-multi-agent-research)
 
 ---
 
