@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="520" viewBox="0 0 960 520" role="img" aria-labelledby="title desc">
+  <title id="title">Sanitized MCP Search Session</title>
+  <desc id="desc">Shows a mock terminal capture where enterprise MCP tools return sanitized JIRA and Confluence records.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1f2937"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="520" fill="url(#bg)" rx="18"/>
+  <rect x="24" y="24" width="912" height="472" fill="url(#panel)" stroke="#334155" stroke-width="2" rx="14"/>
+
+  <text x="48" y="66" fill="#e2e8f0" font-family="Menlo, monospace" font-size="18">enterprise-tools ▸ search_jira_issues</text>
+  <text x="48" y="100" fill="#bae6fd" font-family="Menlo, monospace" font-size="14">Input</text>
+  <rect x="48" y="112" width="400" height="100" rx="10" fill="#0f172a" stroke="#1d4ed8" stroke-width="1.5"/>
+  <text x="64" y="140" fill="#cbd5f5" font-family="Menlo, monospace" font-size="14">{"query": "MTV2005",</text>
+  <text x="64" y="164" fill="#cbd5f5" font-family="Menlo, monospace" font-size="14"> "max_results": 10}</text>
+
+  <text x="48" y="236" fill="#f97316" font-family="Menlo, monospace" font-size="14">Output</text>
+  <rect x="48" y="248" width="864" height="108" rx="10" fill="#0f172a" stroke="#fb923c" stroke-width="1.5"/>
+  <text x="64" y="276" fill="#f8fafc" font-family="Menlo, monospace" font-size="14">{"status": "success",</text>
+  <text x="64" y="300" fill="#f8fafc" font-family="Menlo, monospace" font-size="14"> "issues": [</text>
+  <text x="96" y="324" fill="#f8fafc" font-family="Menlo, monospace" font-size="14">{"key": "SRC-64829",</text>
+  <text x="96" y="344" fill="#f8fafc" font-family="Menlo, monospace" font-size="14"> "summary": "MTV2005 – Validate dynamic attribute",</text>
+  <text x="96" y="364" fill="#f8fafc" font-family="Menlo, monospace" font-size="14"> "status": "In Progress"}</text>
+  <text x="64" y="388" fill="#f8fafc" font-family="Menlo, monospace" font-size="14"> ]}</text>
+
+  <text x="48" y="424" fill="#22d3ee" font-family="Menlo, monospace" font-size="14">enterprise-tools ▸ search_confluence_pages</text>
+  <rect x="48" y="440" width="864" height="40" rx="10" fill="#0f172a" stroke="#22d3ee" stroke-width="1.5"/>
+  <text x="64" y="464" fill="#f0f9ff" font-family="Menlo, monospace" font-size="14">{"pages": [{"title": "MTV2005 – Identity Management", "url": "/display/IDM/MTV2005"}]}</text>
+</svg>
