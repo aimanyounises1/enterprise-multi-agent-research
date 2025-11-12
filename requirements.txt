@@ -1,0 +1,45 @@
+# Core Framework Dependencies
+langchain>=0.2.0
+langchain-core>=0.2.0
+langgraph>=0.2.20
+langchain-ollama>=0.1.0
+
+# MCP (Model Context Protocol) Dependencies
+langchain-mcp-adapters>=0.1.7
+fastmcp>=2.3.0
+mcp>=1.9.1
+
+# Enterprise Integration Dependencies
+python-perforce>=0.5.0
+jira>=3.8.0
+atlassian-python-api>=3.41.0  # For Confluence
+
+# Data Processing & Analysis
+pandas>=2.0.0
+numpy>=1.24.0
+openpyxl>=3.1.0  # Excel processing
+python-docx>=1.0.0  # Word document processing
+PyPDF2>=3.0.0  # PDF processing
+Pillow>=10.0.0  # Image processing
+
+# Core Python Dependencies
+pydantic>=2.0.0
+python-dotenv>=1.0.0
+aiofiles>=23.0.0
+asyncio-throttle>=1.0.0
+
+# Development & Testing (optional)
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+pytest-cov>=4.1.0
+black>=23.0.0
+flake8>=6.0.0
+mypy>=1.5.0
+
+# Optional: Monitoring & Logging
+rich>=13.0.0  # Beautiful terminal output
+loguru>=0.7.0  # Advanced logging
+
+# Optional: Performance
+redis>=5.0.0  # For caching (optional)
+cachetools>=5.3.0  # In-memory caching
